@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor;
+package com.example.TpBuenSabor.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,9 +9,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ArticuloInsumo {
+public class CategoriaArticuloManufacturado {
     private String denominacion;
-    private double precioCompra;
-    private double precioVenta;
-    private Boolean esParaElaborar;
 }

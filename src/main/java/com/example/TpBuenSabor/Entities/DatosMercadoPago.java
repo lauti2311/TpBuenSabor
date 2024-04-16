@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor;
+package com.example.TpBuenSabor.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +9,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ImagenInsumo {
-    private String denominacion;
+public class DatosMercadoPago {
+
 }

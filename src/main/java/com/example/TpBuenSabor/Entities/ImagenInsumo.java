@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor;
+package com.example.TpBuenSabor.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,11 +14,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class SucursalEmpresa {
+public class ImagenInsumo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre;
-    private String horarioApertura;
-    private String horarioCierre;
+    private String denominacion;
 }

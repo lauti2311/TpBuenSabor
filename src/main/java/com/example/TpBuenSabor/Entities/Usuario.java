@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor;
+package com.example.TpBuenSabor.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class PedidoVentaDetalle {
-    private double canitdad;
-    private double subTotal;
+public class Usuario {
+    private String auth0Id;
+    private String username;
 }
