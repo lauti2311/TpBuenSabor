@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Usuario {
-    private String auth0Id;
-    private String username;
+public class Localidad {
+    private String nombre;
 }

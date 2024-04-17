@@ -1,5 +1,6 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
+import com.example.TpBuenSabor.entities.enums.Rol;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,9 +10,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Cliente {
+public class Empleado {
     private String nombre;
     private String apellido;
     private String telefono;
-    private String email;
+    private String emil;
+    private Rol perfil;
 }

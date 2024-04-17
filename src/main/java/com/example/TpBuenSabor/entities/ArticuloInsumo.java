@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,10 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-public class ArticuloInsumo {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class ArticuloInsumo extends Base {
     private String denominacion;
     private double precioCompra;
     private double precioVenta;
@@ -26,7 +23,7 @@ public class ArticuloInsumo {
     @JoinColumn(name = "imagen_insumo_id", referencedColumnName = "id")
     private ImagenInsumo imagenInsumo;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "unidad_medida_id", referencedColumnName = "id")
     private UnidadMedida unidadMedida;
 

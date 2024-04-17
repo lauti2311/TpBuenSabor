@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities.enums;
 
 public enum Rol {
     ADMIN,

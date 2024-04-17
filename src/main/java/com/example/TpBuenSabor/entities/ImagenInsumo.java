@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,8 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class UnidadMedida {
-
+public class ImagenInsumo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

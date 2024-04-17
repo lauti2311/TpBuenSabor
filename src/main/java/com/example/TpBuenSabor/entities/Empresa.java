@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,20 +6,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
-public class SucursalEmpresa {
+public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    private String horarioApertura;
-    private String horarioCierre;
+    private String razonSocial;
+    private int cuil;
 
-    @ManyToOne
-    @JoinColumn(name = "empresa_id", nullable = false)
-    private Empresa empresa;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "empresa_id")
+    private List<SucursalEmpresa> sucursales;
 }

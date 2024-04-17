@@ -1,4 +1,4 @@
-package com.example.TpBuenSabor.Entities;
+package com.example.TpBuenSabor.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
